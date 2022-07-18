@@ -21,11 +21,11 @@ jobs:
           ls /
           echo "OK"
 
-      - name: Should fail 2
-        shell: 'script -q -e -c "bash --noprofile --norc -eo pipefail {0}"'
-        run: |
-          ls /doesnotexist
-          echo "OK"
+      # - name: Should fail 2
+      #   shell: 'script -q -e -c "bash --noprofile --norc -eo pipefail {0}"'
+      #   run: |
+      #     ls /doesnotexist
+      #     echo "OK"
 
       ### build docker image ###
 
